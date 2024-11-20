@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CSS grid-auto-flow Property
+    </title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .main {
+            height:80vh;
+            width: 60vh;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas: 'row1 row2 row3' 
+                                 'row1 row4 row3' 
+                                 'row5 row4 row6';
+
+            /* grid-auto-flow property used here */
+        }
+
+        .Geeks1 {
+            background-color: red;
+            grid-area: row1;
+
+        }
+
+        .Geeks2 {
+            background-color: blue;
+            grid-area: row2;
+        }
+
+        .Geeks3 {
+            background-color: black;
+            grid-area: row3
+        }
+
+        .Geeks4 {
+            background-color: black;
+            grid-area: row1
+        }
+
+        .Geeks5 {
+            background-color: black;
+            grid-area: row4
+        }
+
+        .Geeks6 {
+            background-color: black;
+            grid-area: row3
+        }
+        .Geeks7{
+            background-color: black;
+            grid-area: row5
+        }
+        .Geeks8 {
+            background-color: black;
+            grid-area: row4
+        }
+        .Geeks9 {
+            background-color: black;
+            grid-area: row6
+        }
+
+
+        img {
+            height: 100%;
+            width: 100%;
+
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="Geeks1"><img src="/pexels-pixabay-326055.jpg" alt=""></div>
+        <div class="Geeks2"><img src="/pexels-pixabay-326055.jpg" alt=""></div>
+        <div class="Geeks3"><img src="/pexels-pixabay-326055.jpg" alt=""></div>
+        <div class="Geeks4"><img src="/pexels-pixabay-326055.jpg" alt=""></div>
+        <div class="Geeks5"><img src="/pexels-pixabay-326055.jpg" alt=""></div>
+        <div class="Geeks6"><img src="/pexels-pixabay-326055.jpg" alt=""></div>
+        <div class="Geeks7"><img src="/pexels-pixabay-326055.jpg" alt=""></div>
+        <div class="Geeks8"><img src="/pexels-pixabay-326055.jpg" alt=""></div>
+        <div class="Geeks9"><img src="/pexels-pixabay-326055.jpg" alt=""></div>
+
+    </div>
+</body>
+
+</html>
